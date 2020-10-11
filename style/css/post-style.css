@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("post-media.css");
+@import url("buttons.css");
+
+body{
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas:
+    "hd hd"
+    "sd main"
+    "sd hdzero"
+    "sd hdone"
+    "sd hdtwo";
+}
+
+.box{
+    padding: 10px;
+}
+
+.header{
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/pagetop.jpg");
+    color: white;
+}
+
+.main{
+    grid-area: main;
+}
+
+.heading{
+    grid-area: hdzero;
+}
+
+.subheadingone{
+    grid-area: hdone;
+}
+
+.subheadingtwo{
+    grid-area: hdtwo;
+}
+
+.sidebar{
+    grid-area: sd;
+}
+
+.borderedp{
+    border: 1px solid gray;
+}
+
+.about{
+    background-color: rgb(226, 224, 224);
+    padding: 10px;
+    border-radius: 2px;
+    margin: 5px;
+}
